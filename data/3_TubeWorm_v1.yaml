@@ -1,0 +1,27 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# {dataset_path}
+# ├── train
+# |   └── images
+# |   └── labels
+# ├── val
+# |   └── images
+# |   └── labels
+# └── test
+#     └── images
+#     └── labels
+#
+#'images' and 'labels' folders need to be exactly that name ('images','labels').
+
+
+# Train/val/test sets
+path: /path/to/dataset/yolo_train # dataset root dir
+train: train  # train images (relative to 'path') 270 images
+val: val # val images (relative to 'path') fold1 - 33 images
+test: test # test images (optional) - 30 images
+
+# Classes
+nc: 1 # number of classes
+names: [
+'Tubeworm-Top122'
+]  # class names
+
