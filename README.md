@@ -47,6 +47,10 @@ Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn consi
 - transparent
 - rare (only 44 objects in 9 images)
 
+## Data Augmentation methodology
+![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/augmented_frame1.jpg)
+augmentation is done based on each object not whole picture.
+
 
 # Training Setting
 - Base model : YOLOv5L6
