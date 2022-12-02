@@ -1,19 +1,20 @@
-# [ TubeWorm Object detection ]
-![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg)
-↑ tubeworm detect result
-\
+# Object detection of Tube worms
+![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg) \
+↑ tubeworm detect
 
-# [ Introduction ]
+# Introduction
+Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn considerable attention due to their abundance and dominance in deep-sea chemosynthetic environments.(Li et al. 2019) \
+\
+\
 ![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/intro_image.png)
 ↑ Picture of tube worm. The width of each worm tube is ca. 2 cm. (Hoeksema et al. 2022) \
-Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn considerable attention due to their abundance and dominance in deep-sea chemosynthetic environments.(Li et al. 2019) \
-![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/intro_image.png)
+\
 ↓ Cropped instances of tube worm.
 |       |instance 1       |instance 2      |instance 3     |
 |----|--------------|--------------|--------------|
 |tubeworm|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/crop1.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/crop2.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/crop3.png)|
 
-# [ System Requirements ]
+# System Requirements
 - CPU : AMD EPYC Rome 7352 2P 24-Core CPU 2.3GHz 
 - GPU : NVIDIA A40
 - Ubuntu : 20.04.5 LTS (GNU/Linux 5.4.0-131-generic x86_64)
@@ -22,7 +23,7 @@ Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn consi
 - Python : 3.9.15
 - YOLOv5 : https://github.com/ultralytics/yolov5 (version: f9ca365)
 
-# [ packages in virtual environment ]
+# packages in virtual environment
 - numpy==1.23.5
 - nvidia-cudnn-cu11==8.5.0.96
 - opencv-python==4.6.0.66
@@ -32,33 +33,34 @@ Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn consi
 - torchaudio==0.13.0
 - torchvision==0.14.0
 
-# [ Data ]
+# Data
+## Data overview
 - Images : 9
 - labels : 44
 - Augmented : x24 (rotating objects 15 degree)
 - class : 1 (only tubeworm-top view)
 ![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/data_collograph.png)
 ↑ data analysis
-```
-**Data features**\
+
+## Data features
 - tiny (avg less than 40 x 40 px)
 - transparent
 - rare (only 44 objects in 9 images)
-```
 
-# [ Training Setting ]
-Base model : YOLOv5L6
+
+# Training Setting
+- Base model : YOLOv5L6
 (https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5l6.pt)
-Epoch : 300
-Batch size : 16
+- Epoch : 300
+- Batch size : 16
 
-# [ Hyper parameter ]
-Input Image size : 1280
-Optimizer : SGD
-Learning rate : 0.01
-More detail : check hip.yaml
+# Hyper parameter
+- Input Image size : 1280
+- Optimizer : SGD
+- Learning rate : 0.01
+- More detail : check hip.yaml
 
-# [ Result ]
+# Result
 ## Evaluation on unseen test dataset
 |mAP(0.5)       |mAP(0.95)      |Precision     |Recall     |
 |-------------|---------------|------------|----------|
