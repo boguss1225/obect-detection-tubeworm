@@ -49,7 +49,10 @@ Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn consi
 
 ## Data Augmentation methodology
 ![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/augmented_frame1.jpg)
+\
 augmentation is done based on each object not whole picture.
+\
+In the given image, you can find only object has been rotated.
 
 
 # Training Setting
