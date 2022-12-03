@@ -86,7 +86,8 @@ In the given image, you can find only object has been rotated.
 |train|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/F1_curve_train.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/P_curve_train.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/R_curve_train.png)|
 |test|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/F1_curve_test.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/P_curve_test.png)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/R_curve_test.png)|
 
-
+# Common installation errors
+https://github.com/boguss1225/obect-detection-tubeworm/issues?q=is%3Aissue+is%3Aclosed
 
 # References
 - Hoeksema BW, Timmerman RF, Spaargaren R, Smith-Moorhouse A, van der Schoot RJ, Langdon-Down SJ, Harper CE. Morphological Modifications and Injuries of Corals Caused by Symbiotic Feather Duster Worms (Sabellidae) in the Caribbean. Diversity. 2022; 14(5):332. https://doi.org/10.3390/d14050332
