@@ -1,5 +1,5 @@
 # Object detection of Tube worms
-|label|annotation|
+|label|detection|
 |----|--------------|
 |![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_labels.jpg)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg)| \
 ↑ tubeworm detection result from unseen dataset
@@ -95,6 +95,7 @@ https://github.com/boguss1225/obect-detection-tubeworm/issues?q=is%3Aissue+is%3A
 # Further things to do
 - Check missing annotation in the image (I think there are some)
 - Additional image preprocessing adjustment
+- Still need more image samples for training...
 
 # References
 - Hoeksema BW, Timmerman RF, Spaargaren R, Smith-Moorhouse A, van der Schoot RJ, Langdon-Down SJ, Harper CE. Morphological Modifications and Injuries of Corals Caused by Symbiotic Feather Duster Worms (Sabellidae) in the Caribbean. Diversity. 2022; 14(5):332. https://doi.org/10.3390/d14050332
