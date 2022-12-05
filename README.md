@@ -1,5 +1,6 @@
 # Object detection of Tube worms
 |label|annotation|
+|----|--------------|
 |![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_labels.jpg)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg)| \
 ↑ tubeworm detection result from unseen dataset
 
@@ -59,8 +60,8 @@ In the given image, you can find only object has been rotated.
 # Training Setting
 - Base model : YOLOv5L6
 (https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5l6.pt)
-- Epoch : 300
-- Batch size : 16
+- Epoch : 250
+- Batch size : 8
 
 # Hyper parameter
 - Input Image size : 1280
