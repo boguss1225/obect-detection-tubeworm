@@ -1,6 +1,7 @@
 # Object detection of Tube worms
-![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg) \
-↑ tubeworm detect
+|label|annotation|
+|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_labels.jpg)|![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/val_batch1_pred.jpg)| \
+↑ tubeworm detection result from unseen dataset
 
 # Introduction
 Deep-sea tubeworms belong to the annelid group Siboglinidae and have drawn considerable attention due to their abundance and dominance in deep-sea chemosynthetic environments.(Li et al. 2019) \
@@ -71,11 +72,12 @@ In the given image, you can find only object has been rotated.
 ## Evaluation on unseen test dataset
 |mAP(0.5)       |mAP(0.95)      |Precision     |Recall     |
 |-------------|---------------|------------|----------|
-|90.9%|30.3%|95.1%|88.4%|
+|62.9%|41.5%|75.9%|57.1%|
 
 ## Inference speed
-- **1.9ms** pre-process (only once)
-- **2.3ms** pre image at shape 1280 x 1280px, 3 channels (RRB)
+- **1.3ms** pre-process (only once)
+- **48.4ms** inference
+- **3.2ms** NMS pre image at shape 1280 x 1280px, 3 channels (RRB)
 
 ## Training learning curves
 ![picture](https://github.com/boguss1225/obect-detection-tubeworm/blob/main/results/training_result.png)
@@ -88,6 +90,10 @@ In the given image, you can find only object has been rotated.
 
 # Common installation errors
 https://github.com/boguss1225/obect-detection-tubeworm/issues?q=is%3Aissue+is%3Aclosed
+
+# Further things to do
+- Check missing annotation in the image (I think there are some)
+- Additional image preprocessing adjustment
 
 # References
 - Hoeksema BW, Timmerman RF, Spaargaren R, Smith-Moorhouse A, van der Schoot RJ, Langdon-Down SJ, Harper CE. Morphological Modifications and Injuries of Corals Caused by Symbiotic Feather Duster Worms (Sabellidae) in the Caribbean. Diversity. 2022; 14(5):332. https://doi.org/10.3390/d14050332
